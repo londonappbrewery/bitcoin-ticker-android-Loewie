@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mPriceTextView = (TextView) findViewById(R.id.priceLabel);
-        final Spinner spinner = (Spinner) findViewById(R.id.currency_spinner);
+        Spinner spinner = (Spinner) findViewById(R.id.currency_spinner);
 
         // Create an ArrayAdapter using the String array and a spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.currency_array, R.layout.spinner_item);
